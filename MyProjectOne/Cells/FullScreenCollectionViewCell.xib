@@ -9,30 +9,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" id="gTV-IL-0wX" customClass="FullScreenCollectionViewCell" customModule="MyProjectOne" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="266" height="209"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FullScreenCollectionViewCell" customModule="MyProjectOne" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="266" height="209"/>
+                <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fom-2p-roE">
-                        <rect key="frame" x="0.0" y="0.0" width="266" height="209"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpq-bz-27V">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Fom-2p-roE" secondAttribute="bottom" id="R4y-lG-xXI"/>
-                <constraint firstAttribute="trailing" secondItem="Fom-2p-roE" secondAttribute="trailing" id="T12-MW-wWf"/>
-                <constraint firstItem="Fom-2p-roE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TX0-Hx-wfy"/>
-                <constraint firstItem="Fom-2p-roE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kxV-EE-vNs"/>
+                <constraint firstItem="dpq-bz-27V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ATQ-pf-6AL"/>
+                <constraint firstItem="dpq-bz-27V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Iui-2m-ZBF"/>
+                <constraint firstAttribute="trailing" secondItem="dpq-bz-27V" secondAttribute="trailing" id="mcY-HZ-RVU"/>
+                <constraint firstAttribute="bottom" secondItem="dpq-bz-27V" secondAttribute="bottom" id="t18-ex-rb0"/>
             </constraints>
-            <size key="customSize" width="266" height="209"/>
+            <size key="customSize" width="208" height="203"/>
             <connections>
-                <outlet property="photoView" destination="Fom-2p-roE" id="Mrg-o2-bkl"/>
+                <outlet property="photoView" destination="dpq-bz-27V" id="TRd-2B-Eg7"/>
             </connections>
-            <point key="canvasLocation" x="294.20289855072468" y="151.00446428571428"/>
+            <point key="canvasLocation" x="156.52173913043478" y="48.549107142857139"/>
         </collectionViewCell>
     </objects>
 </document>

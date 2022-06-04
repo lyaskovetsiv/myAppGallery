@@ -10,6 +10,9 @@
 		04158ECD2840C1AD000F2BBD /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04158ECC2840C1AD000F2BBD /* PhotoGallery.swift */; };
 		04158ED02840C2BC000F2BBD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04158ECE2840C2BC000F2BBD /* PhotoCollectionViewCell.swift */; };
 		04158ED12840C2BC000F2BBD /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04158ECF2840C2BC000F2BBD /* PhotoCollectionViewCell.xib */; };
+		0426720E284BA2BE00B77B40 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426720D284BA2BE00B77B40 /* FullScreenViewController.swift */; };
+		04267211284BA42D00B77B40 /* FullScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426720F284BA42D00B77B40 /* FullScreenCollectionViewCell.swift */; };
+		04267212284BA42D00B77B40 /* FullScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04267210284BA42D00B77B40 /* FullScreenCollectionViewCell.xib */; };
 		043DDC8E2846163100522596 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DDC8D2846163100522596 /* FriendsViewController.swift */; };
 		043DDC90284621D100522596 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DDC8F284621D100522596 /* FriendsTableViewCell.swift */; };
 		043DDC932846238C00522596 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043DDC922846238C00522596 /* User.swift */; };
@@ -33,6 +36,9 @@
 		04158ECC2840C1AD000F2BBD /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
 		04158ECE2840C2BC000F2BBD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04158ECF2840C2BC000F2BBD /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		0426720D284BA2BE00B77B40 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FullScreenViewController.swift; path = ../../FullScreenViewController.swift; sourceTree = "<group>"; };
+		0426720F284BA42D00B77B40 /* FullScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		04267210284BA42D00B77B40 /* FullScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		043DDC8D2846163100522596 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		043DDC8F284621D100522596 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		043DDC922846238C00522596 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 				043DDC8F284621D100522596 /* FriendsTableViewCell.swift */,
 				04158ECE2840C2BC000F2BBD /* PhotoCollectionViewCell.swift */,
 				04158ECF2840C2BC000F2BBD /* PhotoCollectionViewCell.xib */,
+				0426720F284BA42D00B77B40 /* FullScreenCollectionViewCell.swift */,
+				04267210284BA42D00B77B40 /* FullScreenCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 				043DDC8D2846163100522596 /* FriendsViewController.swift */,
 				047303922844F99C0049EFDE /* SettingsTableViewController.swift */,
 				046BA0EF283F74E000E62FD9 /* ProfileViewController.swift */,
+				0426720D284BA2BE00B77B40 /* FullScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 				046BA150283F939C00E62FD9 /* Friends.storyboard in Resources */,
 				046BA0F5283F74E100E62FD9 /* Assets.xcassets in Resources */,
 				046BA14E283F933800E62FD9 /* Profile.storyboard in Resources */,
+				04267212284BA42D00B77B40 /* FullScreenCollectionViewCell.xib in Resources */,
 				046BA154283F97D500E62FD9 /* Lato-Regular.ttf in Resources */,
 				04158ED12840C2BC000F2BBD /* PhotoCollectionViewCell.xib in Resources */,
 				046BA0F3283F74E000E62FD9 /* Main.storyboard in Resources */,
@@ -230,6 +240,7 @@
 				043DDC8E2846163100522596 /* FriendsViewController.swift in Sources */,
 				046BA0F0283F74E000E62FD9 /* ProfileViewController.swift in Sources */,
 				046BA0EC283F74E000E62FD9 /* AppDelegate.swift in Sources */,
+				0426720E284BA2BE00B77B40 /* FullScreenViewController.swift in Sources */,
 				046BA0EE283F74E000E62FD9 /* SceneDelegate.swift in Sources */,
 				04158ECD2840C1AD000F2BBD /* PhotoGallery.swift in Sources */,
 				047E41AB28450B6A006790BF /* Settings.swift in Sources */,
@@ -237,6 +248,7 @@
 				04158ED02840C2BC000F2BBD /* PhotoCollectionViewCell.swift in Sources */,
 				043DDC932846238C00522596 /* User.swift in Sources */,
 				047303932844F99C0049EFDE /* SettingsTableViewController.swift in Sources */,
+				04267211284BA42D00B77B40 /* FullScreenCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

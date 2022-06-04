@@ -1,10 +1,3 @@
-//
-//  SettingsTableViewController.swift
-//  MyProjectOne
-//
-//  Created by Ivan Lyaskovets on 30.05.2022.
-//
-
 import UIKit
 
 class SettingsTableViewController: UITableViewController {

@@ -1,10 +1,3 @@
-//
-//  PhotoCollectionViewCell.swift
-//  MyProjectOne
-//
-//  Created by Ivan Lyaskovets on 27.05.2022.
-//
-
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {

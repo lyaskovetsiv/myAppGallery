@@ -1,10 +1,3 @@
-//
-//  FriendsTableViewCell.swift
-//  MyProjectOne
-//
-//  Created by Ivan Lyaskovets on 31.05.2022.
-//
-
 import UIKit
 
 class FriendsTableViewCell: UITableViewCell {

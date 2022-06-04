@@ -37,7 +37,6 @@ class ProfileViewController: UIViewController {
 }
 
 
-
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -51,6 +50,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         let collectionFrame = collectionView.frame
         
         let cellWidth = collectionFrame.width / CGFloat(countImagesInLine)
@@ -59,6 +59,13 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         let spacing = CGFloat((countImagesInLine+1))*offSet / CGFloat(countImagesInLine)
         
         return CGSize(width: cellWidth-spacing, height: cellHeight-(offSet*2))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "FullScreenViewController") as! FullScreenViewController
+        vc.photoGallery = photoGallery
+        vc.index = indexPath
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 }

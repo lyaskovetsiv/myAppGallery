@@ -9,6 +9,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Full Screen View Controller-->
+        <scene sceneID="waN-24-DPn">
+            <objects>
+                <viewController storyboardIdentifier="FullScreenViewController" id="yBI-1C-DW0" customClass="FullScreenViewController" customModule="MyProjectOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HeI-Np-Stz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XUB-59-a9o">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7l5-vr-vxT">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hhk-qZ-oCF">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yoz-EN-oOK">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="yBI-1C-DW0" id="uiX-SQ-GZe"/>
+                                    <outlet property="delegate" destination="yBI-1C-DW0" id="hue-au-nap"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ghj-Lb-nbo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XUB-59-a9o" firstAttribute="top" secondItem="ghj-Lb-nbo" secondAttribute="top" id="aZH-8B-PCZ"/>
+                            <constraint firstItem="ghj-Lb-nbo" firstAttribute="trailing" secondItem="XUB-59-a9o" secondAttribute="trailing" id="d3Y-Ki-d1U"/>
+                            <constraint firstItem="ghj-Lb-nbo" firstAttribute="bottom" secondItem="XUB-59-a9o" secondAttribute="bottom" id="eX4-cD-8pC"/>
+                            <constraint firstItem="XUB-59-a9o" firstAttribute="leading" secondItem="ghj-Lb-nbo" secondAttribute="leading" id="pUk-2m-Aru"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xsp-ZP-FgH"/>
+                    <connections>
+                        <outlet property="collectionView" destination="XUB-59-a9o" id="dRD-K0-gPk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fX8-lb-jCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1952" y="881"/>
+        </scene>
         <!--Профиль-->
         <scene sceneID="GKy-nS-0JX">
             <objects>
@@ -152,6 +203,7 @@
                         <outlet property="photosLabel" destination="mPd-kK-bZt" id="6Fg-VU-abS"/>
                         <outlet property="townLabel" destination="KkO-T9-wP9" id="oeD-yS-aPc"/>
                         <outlet property="userNameLabel" destination="lKa-mp-fgO" id="IGE-lf-Ov0"/>
+                        <segue destination="yBI-1C-DW0" kind="show" id="Bfg-bC-T7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEJ-lD-ie5" sceneMemberID="firstResponder"/>
