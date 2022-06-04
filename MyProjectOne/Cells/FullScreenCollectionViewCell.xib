@@ -16,23 +16,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpq-bz-27V">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZb-v0-HmH">
                         <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
-                    </imageView>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpq-bz-27V">
+                                <rect key="frame" x="0.0" y="0.0" width="208" height="203"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dpq-bz-27V" firstAttribute="bottom" secondItem="Wsn-ws-KZA" secondAttribute="bottom" id="4PX-hm-oPd"/>
+                            <constraint firstItem="dpq-bz-27V" firstAttribute="top" secondItem="Wsn-ws-KZA" secondAttribute="top" id="7I4-bZ-xFO"/>
+                            <constraint firstItem="tHh-df-KAo" firstAttribute="width" secondItem="dpq-bz-27V" secondAttribute="width" id="9Dv-wj-2Gp"/>
+                            <constraint firstItem="dpq-bz-27V" firstAttribute="trailing" secondItem="Wsn-ws-KZA" secondAttribute="trailing" id="Hew-AA-igU"/>
+                            <constraint firstItem="dpq-bz-27V" firstAttribute="leading" secondItem="Wsn-ws-KZA" secondAttribute="leading" id="NHv-Qz-q4X"/>
+                            <constraint firstItem="tHh-df-KAo" firstAttribute="height" secondItem="dpq-bz-27V" secondAttribute="height" id="OAL-Il-6Fu"/>
+                            <constraint firstAttribute="height" secondItem="dpq-bz-27V" secondAttribute="height" id="Tsv-7X-Jhf"/>
+                            <constraint firstAttribute="width" secondItem="dpq-bz-27V" secondAttribute="width" id="ZPB-Dv-cUU"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="tHh-df-KAo"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="Wsn-ws-KZA"/>
+                    </scrollView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="dpq-bz-27V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ATQ-pf-6AL"/>
-                <constraint firstItem="dpq-bz-27V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Iui-2m-ZBF"/>
-                <constraint firstAttribute="trailing" secondItem="dpq-bz-27V" secondAttribute="trailing" id="mcY-HZ-RVU"/>
-                <constraint firstAttribute="bottom" secondItem="dpq-bz-27V" secondAttribute="bottom" id="t18-ex-rb0"/>
+                <constraint firstItem="BZb-v0-HmH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="INR-3X-4cs"/>
+                <constraint firstItem="BZb-v0-HmH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cmG-4f-tOL"/>
+                <constraint firstAttribute="bottom" secondItem="BZb-v0-HmH" secondAttribute="bottom" id="hiZ-WH-OCg"/>
+                <constraint firstAttribute="trailing" secondItem="BZb-v0-HmH" secondAttribute="trailing" id="uso-BV-JDX"/>
             </constraints>
             <size key="customSize" width="208" height="203"/>
             <connections>
                 <outlet property="photoView" destination="dpq-bz-27V" id="TRd-2B-Eg7"/>
+                <outlet property="scrollView" destination="BZb-v0-HmH" id="O0a-td-vAw"/>
             </connections>
-            <point key="canvasLocation" x="156.52173913043478" y="48.549107142857139"/>
+            <point key="canvasLocation" x="155.07246376811597" y="48.549107142857139"/>
         </collectionViewCell>
     </objects>
 </document>
