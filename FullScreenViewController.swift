@@ -13,6 +13,7 @@ class FullScreenViewController: UIViewController {
         collectionView.register(UINib(nibName: "FullScreenCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellId)
         collectionView.performBatchUpdates(nil) { result in
             self.collectionView.scrollToItem(at: self.index, at: .centeredHorizontally, animated: false)
+            //
         }
     }
 }
