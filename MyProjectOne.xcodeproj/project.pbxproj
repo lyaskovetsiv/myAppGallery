@@ -36,7 +36,7 @@
 		04158ECC2840C1AD000F2BBD /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
 		04158ECE2840C2BC000F2BBD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04158ECF2840C2BC000F2BBD /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		0426720D284BA2BE00B77B40 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FullScreenViewController.swift; path = ../../FullScreenViewController.swift; sourceTree = "<group>"; };
+		0426720D284BA2BE00B77B40 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		0426720F284BA42D00B77B40 /* FullScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		04267210284BA42D00B77B40 /* FullScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		043DDC8D2846163100522596 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +400,7 @@
 				DEVELOPMENT_TEAM = PY76VYDPK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyProjectOne/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = myAppGallery;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -429,6 +430,7 @@
 				DEVELOPMENT_TEAM = PY76VYDPK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyProjectOne/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = myAppGallery;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
